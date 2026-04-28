@@ -1,0 +1,15 @@
+
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+stock-service/main
+order-service/main
+
+.vscode/
+bin/
+vendor/
+
+
+*.log

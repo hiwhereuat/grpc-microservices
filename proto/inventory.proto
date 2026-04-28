@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package inventory;
+option go_package = "./proto;inventory";
+
+service Inventory {
+    rpc CheckStock (StockRequest) returns (StockResponse);
+}
+
+message StockRequest {
+    string item_id = 1;
+}
+
+message StockResponse {
+    bool is_available = 1;
+}
